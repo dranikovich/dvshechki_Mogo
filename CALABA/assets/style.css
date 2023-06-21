@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+#auth {
+    background: url(https://media.tenor.com/Knt5OCH2N_gAAAAC/walk-cat.gif);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#auth form {
+    background: rgb(255, 255, 255);
+    color: rgb(17, 16, 16);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: -70%;
+    margin-top: -20%;
+}
+
+#auth form legend {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#auth form label {
+    font-size: 20px;
+    margin: 20px 0 0 0;
+}
+
+#auth form input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #333
+}
+
+#auth form button {
+    width: 50%;
+    padding: 10px;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #333;
+    border: none;
+    outline: none;
+    margin-top: 40px;
+}
+
+header {
+    background: orange;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.container nav ul a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    transition: .1s;
+}
+
+.container nav ul a:hover {
+    transition: .5s;
+    background-color: red;
+    transform: translateY(5px);
+}
+
+.container .logo {
+    width: 8%;
+}
+
+.container img {
+    width: 100%;
+}
+
+/* здесь мы работаем с блоком MAIN */
+.section-welcome {
+    background: url(./images/raimond-klavins-Ixm0cD7teCc-unsplash.jpg);
+    /* растягиваем картинку на ширину родителя по-максимуму */
+    background-size: cover;
+    /* цвет текста сокращение - c */
+    color: #ffffff;
+    /* внутренние отступы снизу и сверху, по бокам отсутствуют*/
+    /* p20 */
+    padding: 20px 0;
+}
+
+/* через запятую можно указывать несколько селекторов */
+.section-welcome h1,
+.section-welcome h2 {
+    /* выравнивание текста по центру от своей ширины текстового фрэйма
+        ta - сокращение*/
+    text-align: center;
+    /* внутренние отступы -- p20p*/
+    padding: 0 20%;
+    /* внутренний отступ только верхний --pt100 */
+    padding-top: 100px;
+}
+
+.section-welcome h2 {
+    /* размер текста  --fsiz*/
+    font-size: 10px;
+    color: #c7c7c7;
+}
+
+.section-welcome .row {
+    /* включает строчное расположение доч. эл */
+    /* df */
+    display: flex;
+    /* отступ между блоками, но не вокруг них*/
+    /* jc  */
+    justify-content: space-between;
+    /* верхний, внешний отступ */
+    /* mt100 */
+    margin-top: 100px;
+}
+
+.section-welcome .row .item {
+    /* ширина блока */
+    /* w20p */
+    width: 20%;
+}
+
+.section-welcome .row .item .line {
+    width: 100%;
+    /* высота блока */
+    /* h2 */
+    height: 2px;
+    background: #fff;
+    /* включает блочное отображение */
+    display: block;
+    /* внешний нижний отступ */
+    /* mb5 */
+    margin-bottom: 5px;
+}
+
+.section-welcome .row .item a {
+    color: white;
+    /* убирает подчеркивание ссылки */
+    /* td */
+    text-decoration: none;
+}
+
+.section-welcome .row .item .line:after {
+    display: block;
+    content: "";
+    height: 100%;
+    width: 20%;
+    background-color: orangered;
+    transition: 1s;
+}
+
+.section-welcome .row .item:hover .line:after {
+    /* время анимации */
+    transition: .2s;
+    width: 80%;
+}
+
+.section-stats {
+    background: linear-gradient(to left, orange, purple);
+    color: #fff;
+}
+
+.section-stats .container {
+    /* df */
+    display: flex;
+}
+
+.section-stats .container .item {
+    /* w20p */
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    /* выравнивание текста по текстовому фрейму */
+    text-align: center;
+    padding: 80px 0;
+    border-right: 2px #ffffff56 solid;
+}
+
+.section-stats .container .item:first-child {
+    border-left: 2px #ffffff56 solid;
+}
+
+.section-stats .container h2 {
+    /* размер текста */
+    /* fsiz */
+    font-size: 30px;
+}
+
+.section-stats .container h3 {
+    /* размер текста */
+    /* fsiz */
+    font-size: 10px;
+}
+
+
+
+/* секция "о нас" */
+.section-about {}
+
+.txt-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.script {
+    font-family: Kaushan Script;
+}
+
+.txt-description h3 {
+    margin-top: 9vh;
+    font-size: 1.5rem;
+}
+
+.txt-description h2 {
+    margin-top: 2.5vh;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+}
+
+.txt-description p {
+    margin-top: 4.5vh;
+    margin-bottom: 4vh;
+    font-size: 0.9735rem;
+    color: #999;
+    padding: 0 10%;
+}
+
+.txt-description .line {
+    margin-top: 4vh;
+    width: 10%;
+    height: 3px;
+    background: rgb(255, 119, 70);
+}
+
+.section-about {
+    padding-bottom: 40px;
+}
+
+.section-about .images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-about .images .bg {
+    width: 32%;
+    height: 180px;
+    background: #95e1d3;
+}
+
+.section-about .images .bg .img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.section-about .images .bg:nth-child(1) .img {
+    background-image: url(./images/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+}
+
+.section-about .images .bg:nth-child(2) .img {
+    background-image: url(./images/jess-bailey-q10VITrVYUM-unsplash.jpg);
+}
+
+.section-about .images .bg:nth-child(3) .img {
+    background-image: url(./images/sora-sagano-WFSap6CIXuw-unsplash.jpg);
+}
+
+.section-about .images .bg .grad {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg,
+            rgba(243, 129, 129, 0.8),
+            rgba(252, 227, 138, 0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: 1s;
+}
+
+.section-about .images .bg:hover .img .grad {
+    /* прозрачность блока */
+    opacity: 1;
+    transition: .5s;
+}
+
+.section-about .images .bg:hover .img {
+    /* прозрачность блока */
+    transform: translate(-10px, -10px);
+    transition: .5s;
+}
+
+
+
+/* секция услуг */
+.section-services {
+    background: #fff; /* освятить */
+    padding: 60px 0;
+}
+
+.section-services .container:nth-child(2) {
+    /* background: #ffb7b7; */                  /* убрать*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.section-services .container:nth-child(2) .cards {
+    width: 30%;
+    display: flex;
+    padding: 10px;
+}
+
+.section-services .container:nth-child(2) .line {
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    margin: 40px 0;
+}
+
+.section-services .container:nth-child(2) .cards h3,
+.section-services .container:nth-child(2) .cards i{
+    color: #95e1d3;
+}
+.section-services .container:nth-child(2) .cards i{
+    font-size: 26px;
+    margin-right: 10px;
+}
+.section-services .container:nth-child(2) .cards p{
+    margin-top: 10px;
+    font-size: 10px;
+    color: #666666;
+}
