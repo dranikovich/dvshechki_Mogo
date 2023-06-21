@@ -382,14 +382,34 @@ header .container {
 .section-slider .hider .image{
     width: calc(100%/3);
     height: 100%;
+    animation: carousel 10s ease-in-out infinite;
 }
+/* убираем */
 
+/* .section-slider .hider:hover .image{
+    transition: 10s;
+    transform: translateX(-200%);
+} */
+@keyframes carousel {
+    0%,10%{
+        transform: translateX(0);
+    }
+    30%, 50%{
+        transform: translateX(-100%);
+    }
+    70%, 90%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
 .section-slider .hider .image:nth-child(1){
-    background-color: red;
+    background-image: url(https://images.unsplash.com/photo-1614624532983-4ce03382d63d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80);
 }
 .section-slider .hider .image:nth-child(2){
-    background-color: rgb(0, 255, 213);
+    background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80);
 }
 .section-slider .hider .image:nth-child(3){
-    background-color: rgb(149, 0, 255);
+    background-image: url(https://images.unsplash.com/photo-1619597455322-4fbbd820250a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
 }
