@@ -324,12 +324,14 @@ header .container {
 
 /* секция услуг */
 .section-services {
-    background: #fff; /* освятить */
+    background: #fff;
+    /* освятить */
     padding: 60px 0;
 }
 
 .section-services .container:nth-child(2) {
-    /* background: #ffb7b7; */                  /* убрать*/
+    /* background: #ffb7b7; */
+    /* убрать*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -350,15 +352,34 @@ header .container {
 }
 
 .section-services .container:nth-child(2) .cards h3,
-.section-services .container:nth-child(2) .cards i{
+.section-services .container:nth-child(2) .cards i {
     color: #95e1d3;
 }
-.section-services .container:nth-child(2) .cards i{
+
+.section-services .container:nth-child(2) .cards i {
     font-size: 26px;
     margin-right: 10px;
 }
-.section-services .container:nth-child(2) .cards p{
+
+.section-services .container:nth-child(2) .cards p {
     margin-top: 10px;
     font-size: 10px;
     color: #666666;
+}
+
+.section-slider .hider {
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+}
+
+.section-slider .hider .row{
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+
+.section-slider .hider .image{
+    width: calc(100%/3);
+    height: 100%;
 }
