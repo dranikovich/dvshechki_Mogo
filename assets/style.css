@@ -424,6 +424,7 @@ header .container {
     background: url(https://images.unsplash.com/photo-1619597455322-4fbbd820250a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
     border-radius: 0 5px 5px 0;
 }
+
 .section-slider .hider .image {
     width: calc(100%/3);
     height: 100%;
@@ -455,6 +456,107 @@ header .container {
     margin-bottom: 20px;
 }
 
+.section-employes {
+    background: linear-gradient(rgba(169, 169, 169, 0.8), rgba(169, 169, 169, 0.8)),
+        url(https://e0.pxfuel.com/wallpapers/361/461/desktop-wallpaper-tfw-you-don-t-have-an-21-9-monitor-for-rad-ultrawide-16-9-edit-outrun-aesthetic-ultrawide.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position-y: -20vh; */
+    /* надо убрать потом */
+
+    padding-bottom: 40px;
+}
+
+.section-employes .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-employes .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.section-employes .card {
+    width: 48%;
+    display: flex;
+}
+
+.section-employes .card .txt {
+    width: 100%;
+}
+
+.section-employes .card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.section-employes .card h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.section-employes .card h4 {
+    font-size: 12px;
+    margin-top: 2px;
+    font-weight: 500;
+    color: #333;
+}
+
+.section-employes .card p {
+    font-size: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #333;
+}
+
+.section-logotypes {
+    padding: 20px 0;
+}
+
+.section-logotypes .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-logotypes .logo {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.section-logotypes .logo img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ненужное
 .test{
     width: 100px;
     height: 100px;
@@ -462,4 +564,4 @@ header .container {
 }
 .test2{
     background: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80);
-}
+} */
