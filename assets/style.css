@@ -871,6 +871,47 @@ header .container {
     margin-top: 20px;
 }
 
-.section-accordion .accordion .item  .aaaaaaaaaaaaaaaaaaaa i{
+.section-accordion .accordion .item .aaaaaaaaaaaaaaaaaaaa{
     color: #95e1d3;
+}
+
+.section-blog .container{
+    display: flex;
+    justify-content: space-between;
+}
+.section-blog .container .card{
+    width: 30%;
+}
+
+.section-blog .container .card .image{
+    height: 150px;
+    /* background: red; */
+    position: relative;
+    background-size: cover;
+}
+.section-blog .container .card:nth-child(1) .image{
+    background-image: url();
+}
+.section-blog .container .card:nth-child(2) .image{
+    background-image: url();
+}
+.section-blog .container .card:nth-child(3) .image{
+    background-image: url();
+}
+
+
+.section-blog .container .card .image .date{
+    width: 25%;
+    height: 40%;
+    background-color: #1fd2b1;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    z-index: 1;
 }
