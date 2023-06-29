@@ -762,3 +762,50 @@ header .container {
 .section-grid p {
     font-size: 10px;
 }
+
+.section-grid2 .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: repeat(5, 1fr);
+    gap: 20px;
+    height: 1750px;
+    margin-top: 40px;
+}
+
+.section-grid2 .container .item:nth-child(1) {
+    background-image: url(https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80);
+    background-size: cover;
+    grid-row: 1;
+    grid-column: 1/3;
+}
+
+.section-grid2 .container .item:nth-child(2) {
+    background-image: url(https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=975&q=80 );
+    background-size: cover;
+    grid-row: 2/4;
+    grid-column: 1;
+}
+
+.section-grid2 .container .item:nth-child(3) {
+    background-image: url(https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+}
+
+.section-grid2 .container .item:nth-child(4) {
+    background-image: url(https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+}
+
+.section-grid2 .container .item:nth-child(5) {
+    background-image: url(https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    grid-row: 3/5;
+    grid-column: 2;
+}
+
+.section-grid2 .container .item:nth-child(6) {
+    background-image: url(https://images.unsplash.com/photo-1683009427500-71296178737f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80);
+    background-size: cover;
+    grid-row: 5;
+    grid-column: 1/3;
+}
