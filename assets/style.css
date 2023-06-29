@@ -809,3 +809,60 @@ header .container {
     grid-row: 5;
     grid-column: 1/3;
 }
+
+.section-accordion label{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: #95e1d3 1px solid;
+    font-size: 30px;
+}
+.section-accordion label i{
+    font-size: 20px;
+    transition: .3s;
+}
+.section-accordion .info{
+    width: 100%;
+    height: 0;
+    padding: 0 10px 0 60px;
+    border: #95e1d3 1px solid;
+    border-top: none;
+    font-size: 25px;
+    overflow: hidden;
+    transition: .3s;
+}
+#accord1:checked ~ .info{
+    height: 180px;
+    padding: 10px 10px 10px 60px;
+    transition: .3s;
+}
+#accord2:checked ~ .info{
+    height: 180px;
+    padding: 10px 10px 10px 60px;
+    transition: .3s;
+}
+#accord3:checked ~ .info{
+    height: 180px;
+    padding: 10px 10px 10px 60px;
+    transition: .3s;
+}
+
+.section-accordion input{
+    display: none;
+}
+
+#accord1:checked ~ label i{
+    transform: rotate(180deg);
+    transition: .3s;
+}
+#accord2:checked ~ label i{
+    transform: rotate(180deg);
+    transition: .3s;
+}
+#accord3:checked ~ label i{
+    transform: rotate(180deg);
+    transition: .3s;
+}
