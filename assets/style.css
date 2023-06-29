@@ -854,15 +854,23 @@ header .container {
     display: none;
 }
 
-#accord1:checked ~ label i{
+#accord1:checked ~ label .fa-chevron-up{
     transform: rotate(180deg);
     transition: .3s;
 }
-#accord2:checked ~ label i{
+#accord2:checked ~ label .fa-chevron-up{
     transform: rotate(180deg);
     transition: .3s;
 }
-#accord3:checked ~ label i{
+#accord3:checked ~ label .fa-chevron-up{
     transform: rotate(180deg);
     transition: .3s;
+}
+
+.section-accordion .accordion .item{
+    margin-top: 20px;
+}
+
+.section-accordion .accordion .item  .aaaaaaaaaaaaaaaaaaaa i{
+    color: #95e1d3;
 }
