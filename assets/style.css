@@ -972,6 +972,7 @@ header .container {
     height: 100%;
     align-items: center;
 }
+
 .section-feature .images {
     width: 70%;
     height: 100%;
@@ -980,16 +981,45 @@ header .container {
     align-items: end;
     position: relative;
 }
+
 .section-feature .hider {
     overflow-y: hidden;
 }
+
 .section-feature .images .tablet-img {
     margin-bottom: -150px;
 }
+
 .section-feature .images .mobile-img {
     height: 40%;
     object-fit: contain;
     position: absolute;
     bottom: -100px;
     right: -230px;
+}
+
+.section-feature .title {
+    margin-top: 100px;
+}
+
+.section-map {
+    margin: 100px 0 100px 0;
+}
+.section-map .container {
+    position: relative;
+}
+.section-map .container .blur {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ccccccee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+@keyframes fade{
+    
 }
