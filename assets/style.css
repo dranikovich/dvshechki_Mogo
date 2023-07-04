@@ -1007,6 +1007,10 @@ header .container {
 }
 .section-map .container {
     position: relative;
+    border-radius: 20px;
+}
+.section-map .container div{
+    border-radius: 20px;
 }
 .section-map .container .blur {
     position: absolute;
@@ -1014,12 +1018,27 @@ header .container {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #ccccccee;
+    background-color: #302d2dca;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 2;
+    color: white;
+}
+.section-map .container .blur i{
+    color: red;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.section-map .container:hover .blur{
+    animation: fade 1s ease-in-out forwards;
 }
 @keyframes fade{
-    
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        z-index: -1;
+    }
 }
