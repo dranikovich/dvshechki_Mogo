@@ -932,23 +932,64 @@ header .container {
 .section-blog .card .text {
     padding: 20px 0;
 }
+
 .section-blog .card .text h3 {
     font-weight: 500;
     font-size: 14px;
     margin-bottom: 20px;
 }
+
 .section-blog .card .text>p {
     font-weight: 300;
     font-size: 12px;
     margin-bottom: 20px;
 }
+
 .section-blog .card .text .views {
     display: flex;
     align-items: center;
 }
+
 .section-blog .card .text .views * {
     margin-right: 5px;
 }
-.section-blog .card .text .views i{
+
+.section-blog .card .text .views i {
     color: #1fd2b1;
+}
+
+.section-feature {
+    background: url(./images/feature_bg.jpg);
+    background-size: cover;
+    height: 850px;
+    text-align: center;
+}
+
+.section-feature .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+.section-feature .images {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+.section-feature .hider {
+    overflow-y: hidden;
+}
+.section-feature .images .tablet-img {
+    margin-bottom: -150px;
+}
+.section-feature .images .mobile-img {
+    height: 40%;
+    object-fit: contain;
+    position: absolute;
+    bottom: -100px;
+    right: -230px;
 }
