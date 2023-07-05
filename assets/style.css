@@ -1052,41 +1052,126 @@ footer .container .column1 {
 footer .container .column2 {
     width: 35%;
 }
+
 footer .container .column3 {
     width: 25%;
 }
-footer .container .column1 h2{
+
+footer .container .column1 h2 {
     font-size: 14px;
     color: #c7c7c7;
 }
-footer .container .column1 p{
+
+footer .container .column1 p {
     margin-top: 10px;
     font-size: 10px;
     color: #444;
 }
-footer .container .column1 h3{
+
+footer .container .column1 h3 {
     margin-top: 10px;
     font-weight: 500;
     font-size: 12px;
     color: #858585;
     display: flex;
 }
-footer .container .column1 h3 span:nth-child(1){
+
+footer .container .column1 h3 span:nth-child(1) {
     font-style: italic;
     font-weight: 700;
     margin-right: 5px;
     color: #444;
 }
-footer .container .column1 .soc-net{
+
+footer .container .column1 .soc-net {
     display: flex;
     align-items: center;
     margin: 10px 0;
 }
-footer .container .column1 .soc-net h3{
+
+footer .container .column1 .soc-net h3 {
     margin: 0;
     margin-right: 7px;
 }
-footer .container .column1 .soc-net i{
+
+footer .column1 .soc-net i {
     color: #1fd2b1;
     margin-left: 7px;
+}
+
+footer .column1 form {
+    display: flex;
+}
+
+footer .column1 form input,
+footer .column1 form button {
+    width: 35%;
+    padding: 10px;
+    outline: none;
+}
+
+footer .column1 form input {
+    width: 50%;
+    border: #ccc 1px solid;
+    color: #1fd2b1;
+}
+
+footer .column1 form input:focus {
+    border: #1fd2b1 1px solid;
+}
+
+footer .column1 form button {
+    border: none;
+    background-color: #1fd2b1;
+    color: white;
+}
+
+footer .column2 h2,
+footer .column3 h2{
+    color: #444;
+    font-weight: 500;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+footer .column2 .blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+footer .column2 .blog .image{
+    width: 40%;
+}
+footer .column2 .blog .text{
+    width: 50%;
+}
+footer .column2 .blog .text h3{
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+footer .column2 .blog .text p{
+    font-size: 8px;
+}
+footer .column3 .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 55px 55px 55px;
+    gap: 5px;
+}
+footer .column3 .grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer .column3 a{
+    color: #aaa;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+    font-style: italic;
+}
+.column2{
+    padding: 0 15px;
+}
+footer{
+    padding-bottom: 20px;
 }
