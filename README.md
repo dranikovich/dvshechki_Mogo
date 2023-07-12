@@ -11,3 +11,6 @@
 
 # Ссылка на рабочую Figma
 # 
+
+# ссылка на атестацию верстка
+# https://drive.google.com/file/d/1gIqj24knpd1KeHzUN_xFQAHu0iZhB8lE/view?usp=sharing
